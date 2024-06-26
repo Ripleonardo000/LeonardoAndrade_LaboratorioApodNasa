@@ -14,7 +14,7 @@ namespace LeonardoAndrade_LaboratorioApodNasa.Services
         {
             LAApod dto = null;
             HttpResponseMessage response;
-            string requestUrl = $"https://api.nasa.gov/planetary/apod?date={dt.ToString("yyyy-MMdd")}&api_key=tJqCXGEUQy1Gk3K4XXbEPDdrtl3hQWvIjCORU9HN";
+            string requestUrl = $"https://api.nasa.gov/planetary/apod?date={dt.ToString("yyyy-MM-dd")}&api_key=tJqCXGEUQy1Gk3K4XXbEPDdrtl3hQWvIjCORU9HN";
             try
             {
                 HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Get, requestUrl);
